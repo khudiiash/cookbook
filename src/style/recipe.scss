@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Montserrat|Mansalva|Tangerine&display=swap');
+.recipe {
+    &-container {
+        margin: 2em 0;
+        background: #fff;
+        box-shadow: 0 0 25px rgba(0,0,0,.15);
+        width: 100%;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #2d2d2d;
+        margin-bottom: 2em;;
+        &-decoration {
+            display: flex;
+            max-width: 100%;
+            &-image {
+                width: 50px;
+                height: 50px;
+                margin: 1em 5%;
+                opacity: .1;
+            }
+        }
+        &-title {
+            font-family: 'Bad Script',serif;
+            font-weight: 500;
+            font-size: 75px;
+            text-align: center;
+        }
+        &-date {
+            float: right;
+            font-family: "Mansalva",serif;
+            writing-mode: vertical-rl;
+            font-size: 35px;
+            font-weight: 900;
+            opacity: .3;
+            height: 0;
+
+            
+            
+        }
+        &-description {
+            width: 70%;
+            margin: auto;
+            font-family: 'Montserrat',serif;
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+
+        }
+    }
+    &-main {
+        display: flex;
+        &-ingredients-wrapper {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+        &-ingredients {
+            label {
+                font-family: 'Bad Script',serif;
+                font-weight: 700;
+                font-size: 35px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            border-radius: 15px;
+            padding: 20% 10% 0% 10%;
+            font-family: 'Montserrat';
+            font-size: 18px;
+            &-duration {
+                font-weight: 600;
+                &-icon {
+                    padding: 15px;
+                    font-size: 35px;
+                }
+            }
+        }
+        &-preparation {
+            &-decoration {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            &-wrapper {
+                text-align: center;
+                font-family: "Montserrat",serif;
+                width: 70%;
+                background: #B6FF85;
+                padding: 1em;
+                border-radius: 15px 0 0 15px;
+                display: flex;
+                margin-bottom: 2em;
+                
+            }
+            padding: 10%;
+            
+            text-align: left;
+            font-weight: 500;
+            font-size: 16px;
+
+            label {
+                font-family: 'Bad Script',serif;
+                font-weight: 700;
+                font-size: 35px;
+            }
+        }
+    }
+   
+    &-footer {
+        display: flex;
+        justify-content: center;
+        &-date {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+        }
+        &-manipulate {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-start;
+            margin-top: 10%;
+            &-edit, &-delete {
+                margin: 10px;
+                padding: 5px;
+                width: 100px;
+                border-radius: 5px;
+                background: #2d2d2d;
+                color: #FFF;
+                text-align: center;
+                transition: 300ms;
+                &:hover {
+                    background: #777777;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+}
